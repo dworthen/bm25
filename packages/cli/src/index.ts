@@ -1,6 +1,7 @@
 import { createCommand } from '@d-dev/roar'
 import pkg from '../package.json'
 import { cronCmd } from './cmds/cron'
+import { deleteCmd } from './cmds/delete'
 import { indexCmd } from './cmds/index'
 import { listCmd } from './cmds/list'
 import { searchCmd } from './cmds/search'
@@ -18,6 +19,7 @@ const cli = createCommand({
 cli.addCommand('index', indexCmd)
 cli.addCommand('search', searchCmd)
 cli.addCommand('list', listCmd)
+cli.addCommand('delete', deleteCmd)
 cli.addCommand('cron', cronCmd)
 cli.addCommand('upgrade', upgradeCmd)
 
