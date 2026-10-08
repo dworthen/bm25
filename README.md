@@ -87,3 +87,5 @@ ghd pull dworthen/bm25/.agents/skills .agents/skills
 # Search all indexes
 /bm25-query Some query
 ```
+
+The bm25-query provides the "grepping" mechanism on top of bm25 search. While the `bm25 search` cli command performs one search with the keywords you provide, the `/bm25-query` performs a form of query decomposition to extract suitable keywords for a keyword search along with identifying additional synonyms/relevant words that align with the intent of the original query for additional searches. The skill will continue paginating through search results as long as returned documents are relevant to answering/responding to the request. Essential, this skill allows an agent to crawl/search your bm25 indexes for relevant documents much like coding agents use grep to search for relevant files.
