@@ -1,0 +1,74 @@
+binaries:
+  linux-arm64: "./bin/linux-arm64/bm25"
+  linux-arm64-musl: "./bin/linux-arm64-musl/bm25"
+  linux-x64: "./bin/linux-x64/bm25"
+  linux-x64-musl: "./bin/linux-x64-musl/bm25"
+  win-x64: "./bin/win-x64/bm25.exe"
+  win-arm64: "bin/win-arm64/bm25.exe"
+  darwin-arm64: "./bin/darwin-arm64/bm25"
+  darwin-x64: "./bin/darwin-x64/bm25"
+
+pack:
+  # prePackCommand: "bun run build"
+  dir: "./.bin-upload"
+
+# npm:
+#   readmeFile: "../../README.md"
+#   licenseFile: "../../LICENSE"
+#   packageJson:
+#     name: "@d-dev/bm25"
+#     version: <%= vars.gitTag %>
+#     description: "SOME_DESCRIPTION"
+#     license: "MIT"
+#     repository: "github:dworthen/bm25"
+#     homepage: "https://dworthen.github.io/bm25"
+#     author: "Derek Worthen <worthend.derek@gmail.com>"
+#     keywords:
+#       - keyword
+#       - list
+#   binaryPackages:
+#     linux-arm64:
+#       name: "@d-dev/bm25-linux-arm64"
+#       os: "linux"
+#       arch: "arm64"
+#     linux-x64:
+#       name: "@d-dev/bm25-linux-x64"
+#       os: "linux"
+#       arch: "x64"
+#     win-x64:
+#       name: "@d-dev/bm25-win-x64"
+#       os: "win32"
+#       arch: "x64"
+#     win-arm64:
+#       name: "@d-dev/bm25-win-arm64"
+#       os: "win32"
+#       arch: "arm64"
+#     darwin-arm64:
+#       name: "@d-dev/bm25-darwin-arm64"
+#       os: "darwin"
+#       arch: "arm64"
+#     darwin-x64:
+#       name: "@d-dev/bm25-darwin-x64"
+#       os: "darwin"
+#       arch: "x64"
+#   publish:
+#     access: "public"
+#     tag: "latest"
+#     # "registry=https://registry.npmjs.org/": true
+#     # "//registry.npmjs.org/:_authToken=<%= env.NPM_TOKEN %>": true
+
+github:
+  owner: "dworthen"
+  repo: "bm25"
+  token: "<%= env.GITHUB_TOKEN %>"
+  release:
+    tag_name: "v<%= vars.gitTag %>"
+  archives:
+    linux-arm64: "tar.gz"
+    linux-arm64-musl: "tar.gz"
+    linux-x64: "tar.gz"
+    linux-x64-musl: "tar.gz"
+    win-x64: "zip"
+    win-arm64: "zip"
+    darwin-arm64: "tar.gz"
+    darwin-x64: "tar.gz"

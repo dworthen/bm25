@@ -1,0 +1,22 @@
+{
+  "name": "@d-dev/bm25",
+  "version": "0.0.0",
+  "private": true,
+  "description": "CLI for bm25",
+  "type": "module",
+  "repository": "github:dworthen/bm25",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "bun run scripts/build.ts",
+    "pack": "bin-upload pack",
+    "publish": "bin-upload publish"
+  },
+  "devDependencies": {
+    "@d-dev/bm25-core": "0.0.0",
+    "@d-dev/roar": "latest",
+    "@types/cli-progress": "^3.11.6",
+    "@types/prompts": "latest",
+    "cli-progress": "^3.12.0",
+    "prompts": "latest"
+  }
+}

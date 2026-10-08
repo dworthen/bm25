@@ -1,0 +1,33 @@
+{
+  "name": "@d-dev/bm25-core",
+  "version": "0.0.0",
+  "description": "Library for bm25",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "README.md",
+    "LICENSE",
+    "package.json",
+    "dist"
+  ],
+  "repository": "github:dworthen/bm25",
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build:code": "bun run scripts/build.ts",
+    "build:types": "tsc",
+    "build": "bun run --parallel build:code build:types",
+    "publish": "npm publish --access public"
+  },
+  "devDependencies": {
+    "@types/stopword": "^2.0.3",
+    "natural": "^8.1.1",
+    "stopword": "^3.1.5"
+  }
+}
