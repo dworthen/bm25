@@ -1,6 +1,6 @@
 {
   "name": "@d-dev/bm25-core",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Library for bm25",
   "type": "module",
   "types": "./dist/index.d.ts",
