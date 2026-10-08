@@ -1,6 +1,6 @@
 {
   "name": "@d-dev/bm25",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "CLI for bm25",
   "type": "module",
@@ -12,7 +12,7 @@
     "publish": "bin-upload publish"
   },
   "devDependencies": {
-    "@d-dev/bm25-core": "0.0.0",
+    "@d-dev/bm25-core": "0.1.0",
     "@d-dev/roar": "latest",
     "@types/cli-progress": "^3.11.6",
     "@types/prompts": "latest",

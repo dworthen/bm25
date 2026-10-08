@@ -14,7 +14,7 @@
     },
     "packages/cli": {
       "name": "@d-dev/bm25",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "devDependencies": {
         "@d-dev/bm25-core": "0.0.0",
         "@d-dev/roar": "latest",
@@ -26,7 +26,7 @@
     },
     "packages/lib": {
       "name": "@d-dev/bm25-core",
-      "version": "0.0.0",
+      "version": "0.1.0",
       "devDependencies": {
         "@types/stopword": "^2.0.3",
         "natural": "^8.1.1",
