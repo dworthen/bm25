@@ -61,3 +61,29 @@ bm25 cron stop
 # View logs
 bm25 cron logs
 ```
+
+## Skills
+
+Installing with [ghd](https://github.com/dworthen/ghd)
+
+```shell
+ghd pull dworthen/bm25/.agents/skills .agents/skills
+```
+
+### Index
+
+```text
+/bm25-index index some_dir as notes
+/bm25-index reindex notes
+/bm25-index reindex all
+```
+
+### Query
+
+```text
+# specify index
+/bm25-query What is X from my notes
+/bm25-query Search my notes for tools that can help manage agents.
+# Search all indexes
+/bm25-query Some query
+```

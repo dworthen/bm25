@@ -1,0 +1,8 @@
+repos: 
+  - repoDirectory: dworthen/templates/.agents/skills/create-skill
+    commit: 6ac21005fd59c18fc4bd9830614ab1c4e72db09f
+    include: 
+      []
+    exclude: 
+      []
+    outputDirectory: .agents/skills/create-skill
